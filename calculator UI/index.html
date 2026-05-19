@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator UI</title>
+    </head>
+    <body>
+        <div class="calculator">
+            
+                <input id="display" readonly>
+            
+              
+                <div class="button-container">
+            
+            <div>
+                <button onclick="clearValue()" class="btn">C</button>
+                <button onclick="deleteLast()" class="btn">DE</button>
+                <button onclick="clearValue('.')" class="btn">.</button>
+                <button onclick="operationValue('/')" class="btn">/</button>
+            </div>
+            <div>
+                <button onclick="enterValue('9')" class="btn">9</button>
+                <button onclick="enterValue('8')" class="btn">8</button>
+                <button onclick="enterValue('6')" class="btn">6</button>
+                <button onclick="enterValue('*')" class="btn">*</button>
+            </div>
+            <div>
+                <button onclick="enterValue('5')" class="btn">5</button>
+                <button onclick="enterValue('4')" class="btn">4</button>
+                <button onclick="enterValue('3')" class="btn">3</button>
+                <button onclick="enterValue('-')" class="btn">-</button>
+            </div>
+            <div>
+                <button onclick="enterValue('2')" class="btn">2</button>
+                <button onclick="enterValue('1')" class="btn">1</button>
+                <button onclick="enterValue('0')" class="btn">0</button>
+                <button onclick="enterValue('+')" class="btn">+</button>
+            </div>
+            <div>
+                <button onclick="equalValue('=')" class="btn" id="btn-equal">=</button>
+                <button onclick="enterValue('00')" class="btn">00</button>
+                <button onclick="enterValue('%')" class="btn">%</button>
+            </div>
+            
+            </div> 
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
